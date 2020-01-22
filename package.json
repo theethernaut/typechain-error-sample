@@ -1,0 +1,30 @@
+{
+  "name": "typechain-error-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "buidler compile",
+    "generate": "typechain --target truffle --outDir typechain 'artifacts/*.json'",
+    "build": "tsc --build .",
+    "prepare": "npm run compile && npm run generate && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.0.2",
+    "@nomiclabs/buidler-truffle5": "^1.0.2",
+    "@nomiclabs/buidler-web3": "^1.0.2",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.1.8",
+    "buidler": "^0.2.8",
+    "truffle-typings": "^1.0.8",
+    "ts-node": "^8.6.2",
+    "typechain": "^1.0.3",
+    "typechain-target-truffle": "^1.0.2",
+    "typescript": "^3.7.5",
+    "web3": "^1.2.0"
+  }
+}
